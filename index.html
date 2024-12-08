@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/header.css">
         <link rel="stylesheet" href="./assets/css/navtop.css">
+        <link rel="stylesheet" href="./assets/css/animation.css">
+        <link rel="stylesheet" href="./assets/css/auth.css">
 
         <!-- Js -->
         <script src="./assets/data/products.js"></script>
@@ -87,6 +89,53 @@
             <div id="container"></div>
 
             <div id="footer"></div>
+        </div>
+
+        <div class="form-container">
+            <div class="form-content">
+                <i class="fa-solid fa-xmark"></i>
+                <!-- Form Đăng Nhập -->
+                <div class="form-box" id="login-form">
+                    <h2>Đăng Nhập</h2>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label for="login-email" name="email">Email:</label>
+                            <input type="email" name="email" id="login-email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="login-password">Mật khẩu:</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <button class="btn__submit" type="submit">Đăng Nhập</button>
+                        <p class="auth__text register__text">Bạn chưa có tài khoản? 
+                            <a href="#register-form">Đăng Ký</a>
+                        </p>
+                    </form>
+                </div>
+            
+                <!-- Form Đăng Ký -->
+                <div class="form-box" id="register-form" style="display: none;">
+                    <h2>Đăng Ký</h2>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label for="register-name">Họ và Tên:</label>
+                            <input type="text" id="register-name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="register-password">Mật khẩu:</label>
+                            <input type="password" id="register-password" name="password" required>
+                        </div>
+                        <button class="btn__submit" type="submit">Đăng Ký</button>
+                        <p class="auth__text login__text">Bạn đã có tài khoản? 
+                            <a href="#login-form">Đăng Nhập</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>

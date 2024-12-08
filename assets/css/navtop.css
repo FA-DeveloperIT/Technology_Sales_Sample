@@ -35,8 +35,17 @@
     border-radius: 5px;
     border: 1px solid #e1e1e1;
     z-index: 2;
-    transform-origin: top right;
-    transition-duration: 0.2s;
+    transform-origin: top right 20px;
+    animation: scaleLanguage linear 0.2s;
+}
+
+.language_change::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 15px;
+    top: -15px;
+    right: 0;
 }
 
 .language_change::before {
@@ -47,7 +56,7 @@
     border-style: solid;
     border-color: transparent transparent white transparent;
     top: -30px;
-    right: 14px;
+    right: 0;
     z-index: -1;
 }
 
