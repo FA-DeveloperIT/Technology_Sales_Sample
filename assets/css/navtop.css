@@ -1,0 +1,84 @@
+.navtop-left {
+    display: flex;
+    margin: 2px 0;
+    float: left;
+}
+
+.navtop-left > div, .navtop-right > div {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #000;
+    transition-duration: 0.2s;
+}
+
+.navtop-right {
+    float: right;
+    display: flex;
+}
+
+.navtop-left > div:hover, .navtop-right > div:hover {
+    color: hsla(0, 0%, 0%, 0.6);
+}
+
+.language {
+    position: relative;
+}
+
+.language_change {
+    display: none;
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    z-index: 2;
+    transform-origin: top right;
+    transition-duration: 0.2s;
+}
+
+.language_change::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 20px 24px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -30px;
+    right: 14px;
+    z-index: -1;
+}
+
+.language_change li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language_change li i.fa-solid.fa-check {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffc0cb;
+}
+
+.language_change li:hover:first-child, .language_change li:hover:last-child {
+    background-color: #e1e1e1;
+}
+
+.language_change li:hover:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.language_change li:hover:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.language:hover > .language_change {
+    display: block;
+}

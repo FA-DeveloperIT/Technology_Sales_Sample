@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#header__container {
+    padding-top: 4px;
+    background: linear-gradient(#f2ced4, #ffc0cb);
+    height: 120px;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
