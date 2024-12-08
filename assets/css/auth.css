@@ -42,6 +42,10 @@
     color: #333;
 }
 
+form.auth__form {
+    margin-top: 20px;
+}
+
 .input-group {
     margin-bottom: 15px;
 }

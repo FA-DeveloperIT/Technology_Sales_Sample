@@ -31,3 +31,7 @@ button {
 ul, li {
     list-style: none;
 }
+
+p {
+    font-weight: normal;
+}
